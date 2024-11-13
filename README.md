@@ -1,1 +1,1 @@
-# HTML
+I’m M.Naveena, and this repository contains a collection of my front-end development projects created with HTML, CSS, and JavaScript. These projects include interactive web applications such as a calculator, an online shopping cart, and other practical tools aimed at enhancing user experience and functionality. Each project focuses on responsive design, clean code structure, and user-friendly interfaces, showcasing fundamental web development skills.
