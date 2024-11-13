@@ -1,0 +1,48 @@
+<!Doctype html> 
+<html> 
+<head> 
+<script type="text/javascript"> 
+function getSum() 
+{ 
+  var num1=Number(number1);
+    var num2=Number(number2); 
+document.getElementById("p1").innerHTML=num1+num2;
+} 
+    function getDiff() 
+{ 
+ var number1=document.getElementById("number1").value; 
+ var number2=document.getElementById("number2").value; 
+ var num1=Number(number1);
+    var num2=Number(number2); 
+document.getElementById("p1").innerHTML=num1-num2;
+} 
+    function getFactor() 
+{ 
+ var number1=document.getElementById("number1").value; 
+ var number2=document.getElementById("number2").value; 
+ var num1=Number(number1);
+    var num2=Number(number2); 
+document.getElementById("p1").innerHTML=num1/num2;
+} 
+   function getProduct() 
+{ 
+ var number1=document.getElementById("number1").value; 
+ var number2=document.getElementById("number2").value; 
+ var num1=Number(number1);
+    var num2=Number(number2); 
+document.getElementById("p1").innerHTML=num1*num2;
+}  
+</script> 
+</head> 
+<body> 
+<form> 
+Enter Num1:<input type="text" id="number1" /><br/> <br/> 
+Enter Num2:<input type="text" id="number2" /><br/>
+    <p id="p1"></p>
+<input type="button" value="+" onclick="getSum()"/> 
+    <input type="button" value="-" onclick="getDiff()"/> 
+    <input type="button" value="/" onclick="getFactor()"/> 
+    <input type="button" value="*" onclick="getProduct()"/> 
+</form> 
+</body> 
+</html>

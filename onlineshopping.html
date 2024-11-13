@@ -1,0 +1,54 @@
+<!DOCTYPE html
+<html> 
+<head> 
+<script language="JavaScript"> 
+var cost; 
+function fun() 
+{ 
+ cost=0; 
+ if(document.myform.Soaps.checked){cost=cost+20.15;} 
+ if(document.myform.Pulses.checked){cost=cost+10.10;} 
+ if(document.myform.Oil.checked){cost=cost+26;}
+ if(document.myform.Rice.checked){cost=cost+29;} 
+ document.myform.total.value="$"+cost; 
+} 
+</script> 
+<style>
+h2{
+text-decoration: underline;
+}
+</style>
+</head> 
+<body background="C:\Users\veena\OneDrive\Desktop\WT lab\onlineshopimg.jpg"> 
+<form name="myform" enctype="text/plain" 
+method="post"> 
+<center><h2>Online Grocery shopping </h2></center> 
+<strong>Personal Details:</strong> 
+<table> 
+<tr><td>Name:</td><td> <input type="text" name="customer"/></td></tr> 
+<tr><td>City:</td><td> <input type="text" name="city"/></td></tr> 
+<tr><td>Phone:</td><td> <input type="text" name="phone"/></td></tr> 
+<tr><td>Email_Id:</td><td> <input type="text" name="email" value="@gmail.com"/></td></tr> 
+</table> 
+<hr/> 
+<strong>Description:</strong> 
+<p>Following are some items with their prices.</p> 
+<p>Choose the required items by checking the chekboxes.</p> 
+</div> 
+<hr/> 
+<strong>Items to be chosen:</strong> 
+<br/> 
+<input type="checkbox" name="Soaps" value="Item1_chosen" onclick="fun()"> Soap($20.15) 
+<p><input type="checkbox" name="Pulses" value="Item2_chosen" onclick="fun()">Pulses($10.10) 
+<p><input type="checkbox" name="Oil" value="Item3_chosen" onclick="fun()"> Oil($26) 
+<p><input type="checkbox" name="Rice" value="Item4_chosen" onclick="fun()">Rice($29) 
+<br/><br/>
+<input type="text" name="total" value="0"/> 
+<br/><br/> 
+<center> 
+<input type="submit" value="Place the Order" /> 
+<input type="reset" value="Clear" /> 
+</center> 
+</form> 
+</body> 
+</html>
